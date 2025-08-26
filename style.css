@@ -25,6 +25,26 @@
     button:hover { border-color: rgba(255,255,255,.28) }
     .mobile { display: none; }
     @media (max-width: 820px) {
-      .mobile { display: flex; gap: 12px; position: absolute; bottom: 16px; right: 16px; }
-      .pad { width: 56px; height: 56px; border-radius: 50%; background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.16); display: grid; place-items: center; font-weight: 900; user-select: none; pointer-events: auto; touch-action: manipulation; }
-    }
+  .pad { 
+    width: 15vw; 
+    height: 15vw; 
+    font-size: 5vw; 
+  }
+}
+
+
+    .colorOptions {
+  display: flex; gap: 8px; margin-top: 6px;
+}
+.color {
+  width: 28px; height: 28px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,.3);
+  transition: transform .1s, box-shadow .2s;
+}
+.color:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 10px rgba(0,0,0,.5);
+}
